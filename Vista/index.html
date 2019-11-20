@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title >
+        CRUD
+    </title>
+    <link rel="stylesheet" href="css/signin.css">
+</head>
+
+<body id="body">
+    <div>
+            <img  id="logo" src="https://i.ibb.co/m4X9DWW/python-in-javascript-2.png" alt="python-in-javascript-1" border="0">
+            
+    </div>
+    
+
+<div id="divcard">
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="event.preventDefault();onFormSubmit();" >
+                    <div id="cardbody">
+                        <label class="tipografia">Nombre*</label><label class="validation-error hide" id="nombreValidationError">Este campo es obligatorio.</label>
+                        <input type="text"  id="nombre">
+                    </div>
+                    <div id="cardbody">
+                        <label class="tipografia">Matricula</label>
+                        <input type="number" id="matricula">
+                    </div>
+                    <div id="cardbody">
+                        <label class="tipografia">Insumo</label>
+                        <input type="text"  id="insumo">
+                    </div>
+                    <div id="cardbody">
+                        <label class="tipografia">Materia</label>
+                        <input type="text"  id="materia">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="listainsumos">
+                    <thead>
+                        <tr>
+                            <th id="thtabla">Nombre</th>
+                            <th id="thtabla">Matricula</th>
+                            <th id="thtabla">Insumo</th>
+                            <th id="thtabla">Materia</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="consulta">
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+
+  
+</body>
+
+</html>
